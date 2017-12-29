@@ -1,0 +1,380 @@
+@import "reset";
+// font
+$font-family: "Microsoft JhengHei",PMingLiU,MingLiu,"Segoe UI","Helvetica",Garuda,Arial,sans-serif;
+$font-size: 16px;
+
+// gutter
+$gutter: 15px;
+
+// color
+$background-color: #fcfbf5;
+$font-color: #333;
+$font-color-gray: lighten($font-color, 55%);
+
+$brand-primary: #039dff;
+$brand-success: #00CC99;
+$brand-accent: #e26789;
+$brand-dark: $font-color;
+$brand-facebook: #4080ff;
+
+// navbar
+$navbar-height: 42px;
+
+// progress
+$progress-height: 20px;
+
+// section
+$section-gutter: 45px;
+
+// zindex
+$navbar-zindex: 1000;
+$fab-zindex: 1045;
+
+// breakpoint
+$mobile-size: 779px;
+
+
+//** html5 **//
+header, aside, nav, main, section, article, figure, footer
+	display: block
+
+//** Base **//
+*
+	box-sizing: border-box;
+	padding: 0
+  	margin: 0
+
+body,html
+	height: 100%;
+	line-height: 1.5;
+	font-family: $font-family;
+
+h1
+	font-size: $font-size*1.5;
+
+h2
+	font-size: $font-size*1.4;
+
+h3
+	font-size: $font-size*1.3;
+
+h4
+	font-size: $font-size*1.1;
+
+h5
+	font-size: $font-size*0.9;
+
+a
+	color: $brand-primary;
+
+// content/////////////////////////////////////////////////////////////
+.wrap
+	max-width: 100%
+	margin: 0 auto
+	background-color: #efe9e7
+
+// header/////////////////////////////////////////////////////////////
+header
+	height: 56px
+	width: 100%
+	position: fixed
+	background: rgba(0,0,0,.8)
+	top: 0
+	z-index: 999
+
+header .logo
+	float: left
+	width: 120px
+	height: 24px
+	margin: 16px 30px
+
+header .logo a
+	display: block
+	text-indent: -9999px
+	width: 100%
+	height: 24px
+	background-size: contain
+	background: url(../images/logo_w.png) center center no-repeat
+
+header .topmenu
+	float: right
+	margin-right: 20px
+
+header .menu li
+	float: left
+
+header .menu a
+	display: block
+	height: 24px
+	text-decoration: none
+	color: #939393
+	font-size: 15px
+	text-align: center
+	font-weight: bold
+	padding: 16px 18px
+
+.clear_both
+    clear: both;
+
+// section-banner/////////////////////////////////////////////////////////////
+.banner
+	height: 420px
+	background-color: #000
+	margin-top: 0
+	background: url(../images/header_desktop.png) center center no-repeat
+	-webkit-background-size: cover
+    background-size: cover
+	display: -webkit-flex
+	display: flex
+	-webkit-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
+	
+.banner .main_title
+	background-color: rgba(0, 0, 0, .3)
+	padding: 25px
+
+.banner h1
+	color: #fff
+	line-height: 0.8
+	text-align: center
+
+.banner p
+	color: rgba(255, 255, 255, .8)
+	text-align: center
+	line-height: 0.5
+
+// aside/////////////////////////////////////////////////////////////
+aside
+	width: 25%
+	padding-right: 3%
+	padding-left: 5%
+	float: left
+	margin-top: 50px
+
+aside h3
+	color: #3d1101
+
+aside .product_list li
+	margin-top: 10px
+	border-bottom: 0.9px solid #3d1101
+
+aside .product_list a
+	text-decoration: none
+	color: #3d1101
+	font-size: 14px
+	margin-bottom: 0
+	line-height: 2.2
+	padding-left: 15px
+	cursor: pointer
+
+.product_list li:hover,
+.product_list li:active>a,
+.product_list li:hover>a,
+.product_list li.active,
+.product_list li.active>a
+	cursor: pointer
+	color: #fff
+	background-color: #3d1101
+
+// section-products/////////////////////////////////////////////////////////////
+.products
+	margin-top: 50px
+	width: 75%
+	float: left
+	padding-right: 5%
+	padding-bottom: 8%
+
+.pure-form input[type="text"]
+    padding: 0.5em 1em
+    display: inline-block
+    border: 0.9px solid #3d1101
+    box-shadow: inset 0 1px 3px #ddd
+    border-radius: 0px
+    vertical-align: middle
+    margin-bottom: 20px
+    width: 350px
+
+.pure-form input[type="text"]:focus,
+    outline: 0
+    border-color: #3d1101
+
+.search,
+.search_form,
+	float: left
+	padding-left: 10px
+
+.search_button
+	background-color: #3d1101
+	color: #fff
+	width: 32px
+	height: 30.5px
+	float: left
+
+.search_button a
+	color: #fff
+	text-align: center
+	padding-left: 7px
+	font-size: 20px
+
+.checkout
+	float: right
+	padding-right: 50px
+	padding-top: 5px
+
+.checkout a
+	text-decoration: none
+	color: #3d1101
+	font-size: 16px
+	font-weight: bold
+	padding-right: 20px
+
+.checkout_line
+	border-right: 1px solid #3d1101
+	margin-right: 20px
+
+.checkout li
+	float: left
+
+.checkout .shopping-cart
+	width: 25px
+
+.product_cars
+	float: left
+	width: 30%
+	margin-right: 1.5%
+	margin-left: 1.5%
+	margin-top: 25px
+	border: 1px solid rgba(61,17,1,0.1)
+	position: relative
+    // box-shadow: 5px
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3)
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3)
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3)
+    background-color: #000
+
+.product_cars::after
+	content: ''
+    position: absolute
+    z-index: -1
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)
+    width: 90%
+    left: 5%
+    height: 30px
+    border-radius: 50%
+    bottom: 0
+
+.product_cars:hover::after
+	content: ''
+    position: absolute
+    z-index: -3
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+    width: 80%
+    left: 5%
+    height: 10px
+    border-radius: 50%
+
+.img_car
+	width: 100%
+	height: 92px
+    -webkit-background-size: cover
+    background-size: cover
+
+.product_cars .img_car .favorite
+	color: #fff
+	margin-left: 10px
+	margin-top: 10px
+
+.pix_car1
+	background: url(../images/product_1.png) right bottom no-repeat
+
+.pix_car2
+	background: url(../images/product_2.png) right bottom no-repeat
+
+.pix_car3
+	background: url(../images/product_3.png) right bottom no-repeat
+
+.pix_car4
+	background: url(../images/product_4.png) right bottom no-repeat
+
+.product_cars h4
+	color: #3d1101
+	text-align: center
+	padding-top: 20px
+
+.product_cars p
+	font-size: 14px
+	color: #3d1101
+	text-align: center
+	line-height: 1.5
+
+.text_line
+	padding-bottom: 8px
+	border-bottom: 0.9px solid #3d1101
+	margin-bottom: 10px
+	width: 80%
+	margin-left: 10%
+	
+.button
+	border: 1px solid #3d1101
+	border-radius: 2px
+	text-align: center
+	margin-top: 10px
+	padding: 5px
+	width: 80%
+	margin-left: 10%
+	margin-bottom: 10px
+
+.button:hover
+	cursor: pointer
+
+.button a
+	text-decoration: none
+	font-size: 16px
+	line-height: 1.5
+	color: #3d1101
+
+// footer/////////////////////////////////////////////////////////////
+footer
+	background-color: #efe9e7
+	padding-top: 50px
+	color: #3d1101
+	padding-left: 5%
+	padding-right: 5%
+	padding-bottom: 30px
+
+footer .about,
+footer .address
+	float: left
+	width: 30%
+	margin-right: 3%
+
+footer .about p,
+footer .address p
+	text-align: justify
+	font-size: 14px
+
+footer h3
+	padding-bottom: 15px
+
+footer .blog
+	float: right
+	width: 25%
+
+footer .blog .footer_logo,
+footer .blog ul
+	float: right
+	margin-bottom: 12px
+
+footer .blog li
+	float: left
+	padding-left: 15px
+
+footer .blog a
+	display: block
+	width: 36px
