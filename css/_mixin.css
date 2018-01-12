@@ -1,0 +1,25 @@
+.header h1 {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.box:before, .box:after {
+  content: " ";
+  display: table; }
+
+.box:after {
+  clear: both; }
+
+.white {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 10px;
+  background: #fff; }
+
+.pink {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 16.66667px;
+  background: pink; }

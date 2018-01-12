@@ -146,46 +146,54 @@ $rounded: true
 				left: 30%
 				top: 70px
 
-// section login //////////////////////////////////////////////////////////////////////////////
-.login
-	height: 500px
-	.login_block
-		width: 300px
-		left: 0
-		right: 0
-		margin: auto
-		h2
-			width: 300px
-			height: 60px
-			@include text-hide
-			background: url(../images/logo_title.gif) center center no-repeat
-		.login_text
-			font-size: 20px
-			text-align: center
+// article resta_intro/////////////////////////////////////////////////////////////
+.resta_intro
+	.title_line
+		span
+			display: inline-block
+			padding: 0 10px
+			position: relative
+		span:before,
+		span:after
+			border-top: 0.7px solid #3d1101
+			content: ""
+			position: absolute
+			top: 50%
+			width: 100px
+			@include mobile
+				width: 50px
+		span:before
+			right: 100%
+		span:after
+			left: 100%
 
-.login
-	.login_input
-		left: 0
-		right: 0
-		margin: auto
-		top: 120px
-		border-top: 3px solid #f56c23
-		@include box-shadow
+// section chef_intro/////////////////////////////////////////////////////////////
+.chef_intro
 
-.form_css
-	label
-		font-size: 14px
-		color: rgb(61,17,1)
-		font-weight: bold
-	.fogot_pw
-		font-size: 13px
-		color: #f56c23
 
-.login
+// section/////////////////////////////////////////////////////////////
+.users_share
+	figure
+		.foodie_pix
+			@include mobile
+				width: 134px
+
+		figcaption
+			width: 70%
+		
+
+// contact/////////////////////////////////////////////////////////////
+.contact
+	.map
+		height: 400px
+		border: 1px solid #d0cfcf
+	.info_input
+		padding-left: 3%
+
+.contact
 	input
-		&[type="text"],
-		&[type="email"],
-		&[type="password"],
+		&[type="text"], 
+		&[type="email"], 
 		&[type="number"]
 			padding: 0.6em 0.6em
 			display: inline-block
@@ -196,7 +204,7 @@ $rounded: true
 			font-size: 14px
 			color: #787878
 			margin-top: 5px
-			margin-bottom: 3px
+			margin-bottom: 12px
 		&[type="text"]:focus, 
 		&[type="email"]:focus, 
 		&[type="number"]:focus
@@ -205,25 +213,20 @@ $rounded: true
 	.textstyle
 		width: 100%
 	.button
-		top: 210px
-		left: 11px
-		right: 0
-		margin: auto
+		float: right
 		.btn
-			text-align: center
-			width: 46%
 			float: left
 			font-family: Heiti TC, Microsoft JhengHei, Helvetica, Arial, sans-serif
-			margin-top: 10px
+			margin-top: 20px
 			font-size: 14px
-			padding: 0.4em 1em
+			padding: 0.5em 1em
 			color: #fff
 			font-weight: bold
 			border: none rgba(0, 0, 0, 0)
 			background-color: #f56c23
 			text-decoration: none
 			border-radius: 4px
-			margin-right: 10px
+			margin-right: 20px
 			box-shadow: 5px
 			-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3)
 			-webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3)
@@ -241,7 +244,6 @@ $rounded: true
 		.btn_gray
 			background-color: #a09e9e
 
-
 // footer/////////////////////////////////////////////////////////////
 footer
 	.address
@@ -255,9 +257,6 @@ footer
 			a
 				display: block
 				width: 36px
-
-.overflow
-	overflow: auto
 
 // animation/////////////////////////////////////////////////////////////
 .js_animated_x-60

@@ -26,209 +26,235 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/all.js"></script>
+    <script src="js/all2.js"></script>
 
 </head>
 
 <body>
     <div class="wrap">
         <!-- header +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <header>
-            <div class="logo">
-                <a href="#">六角西餐廳</a>
-            </div>
-            <nav class="topmenu">
-                <ul class="menu">
+        <header class="affix">
+            <div class="container">
+                <div class="logo pull-left">
+                    <a href="#">六角西餐廳</a>
+                </div>
+                <ul class="menu pull-right clearfix">
                     <li>
-                        <a href="#">購物車</a>
+                        <a href="#tasty_tips" class="js_scroll_top">好吃的秘訣</a>
                     </li>
                     <li>
-                        <a href="#">註冊</a>
+                        <a href="#chef_today" class="js_scroll_top">主廚介紹</a>
                     </li>
                     <li>
-                        <a href="#">登入</a>
+                        <a href="#foodie_sharing" class="js_scroll_top">饕客分享</a>
+                    </li>
+                    <li>
+                        <a href="#online_booking" class="js_scroll_top">線上訂位</a>
                     </li>
                 </ul>
-            </nav>
-            <div class="clear_both"></div>
+                <a href="#" class="showmenu">
+                    <div class="top"></div>
+                    <div class="mid"></div>
+                    <div class="bot"></div>
+                </a>
+            </div>
         </header>
         <!-- section-banner +++++++++++++++++++++++++++++++++++++++++++++++-->
         <section class="banner">
-            <div class="main_title">
-                <h1>咬一口就無法忘懷的漢堡</h1>
-                <br>
-                <p>七夕絕對無法錯過的好滋味</p>
-                <br>
-                <p><i class="fa fa-diamond" aria-hidden="true"></i> 六角大漢堡 <i class="fa fa-cutlery" aria-hidden="true"></i></p>
+            <div class="container relative">
+                <div class="main_title absolute pa-2" id="js_hamburger">
+                    <h1 class="text-white text-center">咬一口就無法忘懷的漢堡</h1>
+                    <br>
+                    <p class="text-white text-center">七夕絕對無法錯過的好滋味</p>
+                    <br>
+                    <p class="text-white text-center"><i class="fa fa-diamond" aria-hidden="true"></i> 六角大漢堡 <i class="fa fa-cutlery" aria-hidden="true"></i></p>
+                </div>
             </div>
         </section>
-        <!-- article +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <article>
-            <h2 class="title_line"><span>客人總是在問<br>這麼好吃的秘訣什麼</span></h2>
-            <figure>
-                <img src="images/feature_1.png" alt="">
-                <figcaption>
-                    <h4>台灣本土蔬菜</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate hic doloremque minima delectus, porro beatae, mollitia sunt esse officia molestiae itaque, magnam quae architecto fuga nobis quisquam ullam nam optio.</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/feature_2.png" alt="">
-                <figcaption>
-                    <h4>專業米其林廚師</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque impedit rerum modi quaerat itaque. Qui nobis minima inventore odio cumque asperiores, laborum corrupti dolorem quos, voluptate, quidem eius harum!</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/feature_3.png" alt="">
-                <figcaption>
-                    <h4>對於專業不能退讓</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea odio, cumque laboriosam ullam beatae, veniam, sint nam hic architecto eaque? Ea consectetur voluptatum fugit sequi deserunt asperiores quam debitis?</p>
-                </figcaption>
-            </figure>
-            <div class="clear_both"></div>
+        <!-- article resta_intro +++++++++++++++++++++++++++++++++++++++++++++++-->
+        <article id="tasty_tips" class="resta_intro bg-lightpink py-3">
+            <div class="container">
+                <h2 class="title_line text-brown text-center px-1 py-2"><span>客人總是在問<br>這麼好吃的秘訣什麼</span></h2>
+                <div class="row">
+                    <figure class="col-4 py-2 text-center js_animated_x-60">
+                        <img src="images/feature_1.png" alt="">
+                        <figcaption>
+                            <h4 class="my-1 text-brown">台灣本土蔬菜</h4>
+                            <p class="text-brown text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate hic doloremque minima delectus, porro beatae, mollitia sunt esse officia molestiae itaque, magnam quae architecto fuga nobis quisquam ullam nam optio.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-4 py-2 text-center js_animated_y60">
+                        <img src="images/feature_2.png" alt="">
+                        <figcaption>
+                            <h4 class="my-1 text-brown">專業米其林廚師</h4>
+                            <p class="text-brown text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque impedit rerum modi quaerat itaque. Qui nobis minima inventore odio cumque asperiores, laborum corrupti dolorem quos, voluptate, quidem eius harum!</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-4 py-2 text-center js_animated_x60">
+                        <img src="images/feature_3.png" alt="">
+                        <figcaption>
+                            <h4 class="my-1 text-brown">對於專業不能退讓</h4>
+                            <p class="text-brown text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea odio, cumque laboriosam ullam beatae, veniam, sint nam hic architecto eaque? Ea consectetur voluptatum fugit sequi deserunt asperiores quam debitis?</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- <div class="clear_both"></div> -->
+            </div>
         </article>
         <!-- section +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <section>
-            <figure>
-                <img src="images/main_chef_brown.png" alt="">
-                <figcaption>
-                    <h3>今日主廚 : 帕金森、梅在帕</h3>
-                    <h5>Today Chef : Plum Shock</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit ipsa tempora, delectus aspernatur similique quod laudantium quaerat, tenetur exercitationem id asperiores facilis eaque. Deleniti fuga nihil atque accusamus ipsa
-                        nobis mollitia unde at ratione, laboriosam velit ab voluptates sapiente nesciunt fugiat nam laudantium vel esse. Quisquam fugiat saepe vitae at tempore rem optio eveniet modi ipsam, illum ab incidunt ducimus. Provident rerum sunt
-                        maiores animi vitae, est laborum, culpa saepe ab velit reiciendis! Incidunt sequi cumque quae, doloribus et culpa ipsa vel nisi perferendis dignissimos error nobis labore nihil, enim vitae itaque nemo illum animi! Quae itaque quasi
-                        neque, aspernatur tempore cumque placeat sapiente quaerat saepe! Blanditiis iure, facilis similique pariatur neque natus. Omnis aliquam et harum fuga! Dolor.</p>
-                </figcaption>
-                <div class="clear_both"></div>
-            </figure>
-        </section>
-        <!-- aside +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <aside>
-            <h2>聽聽別人的感想</h2>
-            <figure>
-                <img src="images/avatar_1.png" alt="">
-                <figcaption>
-                    <h4>高雄吃一口</h4>
-                    <p class="user_share">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-                    <p class="user">-- 產品經理</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/avatar_2.png" alt="">
-                <figcaption>
-                    <h4>廟口小霸王</h4>
-                    <p class="user_share">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-                    <p class="user">-- 金身道士</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/avatar_3.png" alt="">
-                <figcaption>
-                    <h4>春天也來了</h4>
-                    <p class="user_share">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-                    <p class="user">-- 美麗萬分</p>
-                </figcaption>
-            </figure>
-            <div class="clear_both"></div>
-        </aside>
-        <!-- contact +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <div class="contact">
-            <h2>我們的位置不太夠坐<br>要不要先定位呢?</h2>
-            <div id="googleMap" class="map"></div>
-            <script>
-                function myMap() {
-                    var myCenter = new google.maps.LatLng(22.855225, 120.263521);
-                    var mapProp = {
-                        center: myCenter,
-                        zoom: 12,
-                        scrollwheel: false,
-                        draggable: false,
-                        mapTypeId: google.maps.MapTypeId.ROADMAP
-                    };
-                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                    var marker = new google.maps.Marker({
-                        position: myCenter
-                    });
-                    marker.setMap(map);
-                }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm7Sw5P4LUFr_tMJOzGc-SUCPX34XiF6A&callback=myMap"></script>
-
-            <form class="form_css" action="action_page.php">
-                <div class="info_input">
-                    <label for="name">姓名:<br></label>
-                    <input class="textstyle" id="name" type="text" placeholder="王大明" name="name"><br>
-                    <label for="phone">電話:<br></label>
-                    <input class="textstyle" id="phone" type="email" placeholder="0912345678" name="phone"><br>
-                    <label for="mail">信箱:</label><br>
-                    <input class="textstyle" id="mail" type="email" placeholder="hexschool@mail.com" name="mail"><br>
-                    <label for="number">人數:<br></label>
-                    <input class="textstyle" id="number" type="email" placeholder="12" name="number"><br>
-                    <label for="number">是否需要素食:<br></label>
-                    <input type="radio" name="sex" value="male">男生
-                    <input type="radio" name="sex" value="female">女生
-                    <br>
-                    <div class="button">
-                        <button class="btn btn_gray">取消</button>
-                        <button class="btn">送出</button>
+        <section id="chef_today" class="chef_intro bg-brown pt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="chef_pix col-6 js_animated_x-60 text-center">
+                        <img src="images/main_chef_brown.png" width="470" height="460" alt="">
+                    </div>
+                    <div class="chef_name col-6 pb-1 js_animated_x60">
+                        <div class="chef_back pa-1">
+                            <h3 class="text-white mt-2">今日主廚 : 帕金森、梅在帕</h3>
+                            <h5 class="text-white mb-1">Today Chef : Plum Shock</h5>
+                            <p class="text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit ipsa tempora, delectus aspernatur similique quod laudantium quaerat, tenetur exercitationem id asperiores facilis eaque. Deleniti fuga nihil atque accusamus
+                                ipsa nobis mollitia unde at ratione, laboriosam velit ab voluptates sapiente nesciunt fugiat nam laudantium vel esse. Quisquam fugiat saepe vitae at tempore rem optio eveniet modi ipsam, illum ab incidunt ducimus. Provident
+                                rerum sunt maiores animi vitae, est laborum, culpa saepe ab velit reiciendis! Incidunt sequi cumque quae, doloribus et culpa ipsa vel nisi perferendis dignissimos error nobis labore nihil, enim vitae itaque nemo illum animi!
+                                Quae itaque quasi neque, aspernatur tempore cumque placeat sapiente quaerat saepe! Blanditiis iure, facilis similique pariatur neque natus. Omnis aliquam et harum fuga! Dolor.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="clear_both"></div>
-            </form>
-            <div class="clear_both"></div>
-        </div>
-        <!-- footer +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <footer>
-            <div class="about">
-                <h3>關於 六角西餐廳</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit est a perferendis labore modi ut?</p>
             </div>
-            <div class="address">
-                <h3>聯絡方式</h3>
-                <ul>
-                    <li>
-                        <p>高雄市中正五路58號1樓</p>
-                    </li>
-                    <li>
-                        <p>+886 886 886</p>
-                    </li>
-                    <li>
-                        <p>service@hexschool.com</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="blog">
-                <div class="footer_logo">
-                    <img src="images/footer_logo.gif" alt="">
+        </section>
+        <!-- section users_share +++++++++++++++++++++++++++++++++++++++++++++++-->
+        <section id="foodie_sharing" class="users_share bg-lightpink py-3">
+            <div class="container">
+                <h2 class="title_line text-brown text-center py-2">聽聽別人的感想</h2>
+                <div class="row">
+                    <figure class="col-4 clearfix pa-1 js_animated_x-60">
+                        <div class="foodie_pix"><img class="pull-left" src="images/avatar_1.png" width="67" height="67" alt=""></div>
+                        <figcaption class="pull-left ml-1">
+                            <h4 class="text-brown py-1">高雄吃一口</h4>
+                            <p class="user_text text-brown pb-1">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <p class="user pull-right text-light-brown"><cite>-- 產品經理</cite></p>
+                        </figcaption>
+                        <!-- <div class="clearfix"></div> -->
+                    </figure>
+                    <figure class="col-4 clearfix pa-1 js_animated_y60">
+                        <div class="foodie_pix"><img class="pull-left" src="images/avatar_2.png" width="67" height="67" alt=""></div>
+                        <figcaption class="pull-left ml-1">
+                            <h4 class="text-brown py-1">廟口小霸王</h4>
+                            <p class="user_text text-brown pb-1">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <p class="user pull-right text-light-brown"><cite>-- 金身道士</cite></p>
+                        </figcaption>
+                    </figure>
+                    <figure class="col-4 clearfix pa-1 js_animated_x60">
+                        <div class="foodie_pix"><img class="pull-left" src="images/avatar_3.png" width="67" height="67" alt=""></div>
+                        <figcaption class="pull-left ml-1">
+                            <h4 class="text-brown py-1">春天也來了</h4>
+                            <p class="user_text text-brown pb-1">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                            <p class="user pull-right text-light-brown"><cite>-- 美麗萬分</cite></p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <ul>
-                    <li>
-                        <a href=""><img src="images/facebook.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/google-plus.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/twitter.svg" alt=""></a>
-                    </li>
-                </ul>
             </div>
-            <div class="clear_both"></div>
+        </section>
+        <!-- contact +++++++++++++++++++++++++++++++++++++++++++++++-->
+        <section id="online_booking" class="contact bg-complexion py-2">
+            <div class="container">
+                <h2 class="text-center text-brown py-2">我們的位置不太夠坐<br>要不要先定位呢?</h2>
+                <div class="row">
+                    <div class="col-6 px-1 pull-left js_animated_x-60">
+                        <div id="googleMap" class="map"></div>
+                        <script>
+                            function myMap() {
+                                var myCenter = new google.maps.LatLng(22.855225, 120.263521);
+                                var mapProp = {
+                                    center: myCenter,
+                                    zoom: 12,
+                                    scrollwheel: false,
+                                    draggable: false,
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                };
+                                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                                var marker = new google.maps.Marker({
+                                    position: myCenter
+                                });
+                                marker.setMap(map);
+                            }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm7Sw5P4LUFr_tMJOzGc-SUCPX34XiF6A&callback=myMap"></script>
+                    </div>
+
+                    <div class="info_input col-6 pa-1 pull-left text-brown js_animated_x60">
+                        <form class="form_css" action="action_page.php">
+                            <label for="name">姓名:<br></label>
+                            <input class="textstyle" id="name" type="text" placeholder="王大明" name="name"><br>
+                            <label for="phone">電話:<br></label>
+                            <input class="textstyle" id="phone" type="number" placeholder="0912345678" name="phone"><br>
+                            <label for="mail">信箱:</label><br>
+                            <input class="textstyle" id="mail" type="email" placeholder="hexschool@mail.com" name="mail"><br>
+                            <label for="number">人數:<br></label>
+                            <input class="textstyle" id="number" type="number" placeholder="12" name="number"><br>
+                            <label for="number">是否需要素食:<br></label>
+                            <input type="radio" name="sex" value="male">男生
+                            <input type="radio" name="sex" value="female">女生
+                            <br>
+                            <div class="button">
+                                <button class="btn btn_gray">取消</button>
+                                <button class="btn">送出</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer +++++++++++++++++++++++++++++++++++++++++++++++-->
+        <footer class="bg-lightpink text-brown py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="about pull-left col-3 mr-3 mb-2">
+                        <h3 class="pb-1">關於 六角西餐廳</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur tempora facilis soluta ullam fugit voluptates cumque odio tenetur. Dicta?</p>
+                    </div>
+                    <div class="address pull-left col-3 mx-1 mb-2">
+                        <h3 class="pb-1">聯絡方式</h3>
+                        <ul>
+                            <li>
+                                <p>高雄市中正五路58號1樓</p>
+                            </li>
+                            <li>
+                                <p>+886 886 886</p>
+                            </li>
+                            <li>
+                                <p>service@hexschool.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog col-3 pull-right">
+                        <div class="footer_logo pull-right pb-1">
+                            <img src="images/logo_title.gif" width="250" height="50" alt="">
+                        </div>
+                        <br>
+                        <ul class="pull-right">
+                            <li>
+                                <a href=""><img src="images/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/google-plus.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </footer>
 
     </div>
 
-
-
-
-    <!-- <script src="js/lightbox-plus-jquery.min.js"></script>     -->
-    <!-- <script src="js/jquery.nivo.slider.js"></script> -->
 </body>
 
 </html>

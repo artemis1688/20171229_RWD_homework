@@ -27,225 +27,227 @@
     <![endif]-->
 
     <link rel="stylesheet" href="css/shopping_car.css">
-    <!-- <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/themes/light/light.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/themes/dark/dark.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/themes/bar/bar.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" /> -->
-
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/all.js"></script>
+    <script src="js/shopping_car.js"></script>
+    <script src="js/all2.js"></script>
 
 </head>
 
 <body>
     <div class="wrap">
         <!-- header +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <header>
-            <div class="logo">
-                <a href="#">六角西餐廳</a>
-            </div>
-            <nav class="topmenu">
-                <ul class="menu">
+        <header class="affix">
+            <div class="container">
+                <div class="logo pull-left">
+                    <a href="#">六角西餐廳</a>
+                </div>
+                <ul class="menu pull-right clearfix">
                     <li>
-                        <a href="#">購物車</a>
+                        <a href="index.html" class="js_scroll_top">回首頁</a>
                     </li>
                     <li>
-                        <a href="#">註冊</a>
+                        <a href="shopping_car.html" class="js_scroll_top">線上購物</a>
                     </li>
                     <li>
-                        <a href="#">登入</a>
+                        <a href="register.html" class="js_scroll_top">註冊</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="js_scroll_top">登入</a>
                     </li>
                 </ul>
-            </nav>
-            <div class="clear_both"></div>
+                <a href="#" class="showmenu">
+                    <div class="top"></div>
+                    <div class="mid"></div>
+                    <div class="bot"></div>
+                </a>
+            </div>
         </header>
         <!-- section-banner +++++++++++++++++++++++++++++++++++++++++++++++-->
         <section class="banner">
-            <div class="main_title">
-                <h1>咬一口就無法忘懷的漢堡</h1>
-                <br>
-                <p>七夕絕對無法錯過的好滋味</p>
-                <br>
-                <p><i class="fa fa-diamond" aria-hidden="true"></i> 六角大漢堡 <i class="fa fa-cutlery" aria-hidden="true"></i></p>
-            </div>
-        </section>
-        <!-- aside +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <aside>
-            <h3><i class="fa fa-shopping-basket" aria-hidden="true"></i> 線上訂購美食</h3>
-            <ul class="product_list">
-                <li><a href="#">全部(23)</a></li>
-                <li><a href="#">只愛吃薯條(18)</a></li>
-                <li><a href="#">加熱就可食(1)</a></li>
-                <li class="active"><a href="#">不敗漢堡系列(4)</a></li>
-            </ul>
-        </aside>
-        <!-- section-products +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <section class="products">
-            <div class="product_search">
-                <div class="search">
-                    <form class="pure-form">
-                        <input type="text" class="search_form">
-                        <div class="search_button">
-                            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="clear_both"></div>
-                    </form>
+            <div class="container relative">
+                <div class="main_title absolute pa-2" id="js_hamburger">
+                    <h1 class="text-white text-center">咬一口就無法忘懷的漢堡</h1>
+                    <br>
+                    <p class="text-white text-center">七夕絕對無法錯過的好滋味</p>
+                    <br>
+                    <p class="text-white text-center"><i class="fa fa-diamond" aria-hidden="true"></i> 六角大漢堡 <i class="fa fa-cutlery" aria-hidden="true"></i></p>
                 </div>
-                <ul class="checkout">
-                    <li class="checkout_line">
-                        <a href="#">結帳去</a>
-                    </li>
-                    <li>
-                        <a href="#"><img class="shopping-cart" src="images/shopping-cart.png" alt=""></a>
-                    </li>
-                </ul>
-                <div class="clear_both"></div>
             </div>
-            <article class="product_cars">
-                <figure>
-                    <div class="ribbons">
-                        <div class="top">
-                            <div class="triangle t1"></div>
-                            <div class="triangle t2"></div>
-                            <div class="t3"></div>
-                            <div class="triangle t4"></div>
-                            <div class="triangle t5"></div>
-                        </div>
-                        <div class="mid">
-                            <div class="triangle m1"></div>
-                            <div class="triangle m2"></div>
-                            <div class="triangle m3"></div>
-                        </div>
-                        <div class="bottom">
-                            <div class="triangle b1"></div>
-                            <div class="triangle b2"></div>
-                        </div>
-
-                    </div>
-                    <div class="img_car pix_car1">
-                        <a href="#">
-                            <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
-                        </a>
-                        <img src="images/product_1.png" alt="" width="300" height="120">
-                    </div>
-                    <figcaption>
-                        <h4>經典漢堡套餐</h4>
-                        <p class="text_line">Class Hamburger Package</p>
-                        <p>$120</p>
-                    </figcaption>
-                    <div class="button">
-                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
-                    </div>
-                </figure>
-            </article>
-            <article class="product_cars">
-                <figure>
-                    <div class="img_car pix_car2">
-                        <a href="#">
-                            <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
-                        </a>
-                        <img src="images/product_2.png" alt="" width="300" height="120">
-                    </div>
-                    <figcaption>
-                        <h4>經典漢堡套餐</h4>
-                        <p class="text_line">Class Hamburger Package</p>
-                        <p>$120</p>
-                    </figcaption>
-                    <div class="button">
-                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
-                    </div>
-                </figure>
-            </article>
-            <article class="product_cars">
-                <figure>
-                    <div class="img_car pix_car3">
-                        <a href="#">
-                            <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
-                        </a>
-                        <img src="images/product_3.png" alt="" width="300" height="120">
-                    </div>
-                    <figcaption>
-                        <h4>經典漢堡套餐</h4>
-                        <p class="text_line">Class Hamburger Package</p>
-                        <p>$120</p>
-                    </figcaption>
-                    <div class="button">
-                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
-                    </div>
-                </figure>
-            </article>
-            <article class="product_cars">
-                <figure>
-                    <div class="img_car pix_car4">
-                        <a href="#">
-                            <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
-                        </a>
-                        <img src="images/product_4.png" alt="" width="300" height="120">
-                    </div>
-                    <figcaption>
-                        <h4>經典漢堡套餐</h4>
-                        <p class="text_line">Class Hamburger Package</p>
-                        <p>$120</p>
-                    </figcaption>
-                    <div class="button">
-                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
-                    </div>
-                </figure>
-            </article>
-            <div class="clear_both"></div>
         </section>
-        <div class="clear_both"></div>
+        <!---Order online +++++++++++++++++++++++++++++++++++++++++++++++-->
+        <section class="order_online bg-lightpink py-2">
+            <div class="container">
+                <div class="row">
+                    <!-- aside +++++++++++++++++++++++++++++++++++++++++++++++-->
+                    <aside class="options pull-left px-1">
+                        <div class="container">
+                            <div class="row">
+                                <h3 class="text-brown px-1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> 線上訂購美食</h3>
+                                <ul class="product_list py-1">
+                                    <li><a href="#">全部(23)</a></li>
+                                    <li><a href="#">只愛吃薯條(18)</a></li>
+                                    <li><a href="#">加熱就可食(1)</a></li>
+                                    <li class="active"><a href="#">不敗漢堡系列(4)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- products +++++++++++++++++++++++++++++++++++++++++++++++-->
+                    <div class="products pull-left px-1">
+                        <div class="product_search">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="search">
+                                        <form class="pure-form py-1">
+                                            <input type="text" class="search_form pull-left">
+                                            <div class="search_button pull-left bg-brown">
+                                                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="checkout pull-right">
+                                        <li class="checkout_line">
+                                            <a href="#">結帳去</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img class="shopping-cart" src="images/shopping-cart.png" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="shopping_car py-1">
+                            <li class="product_cars relative js_animated_y60">
+                                <h4 class="ribbons_text absolute font-bold">熱銷美食</h4>
+                                <!-- ribbons -->
+                                <div class="ribbons absolute">
+                                    <div class="top">
+                                        <div class="triangle t1"></div>
+                                        <div class="triangle t2"></div>
+                                        <div class="t3"></div>
+                                        <div class="triangle t4"></div>
+                                    </div>
+                                    <div class="mid">
+                                        <div class="triangle m1"></div>
+                                        <div class="triangle m2"></div>
+                                        <div class="triangle m3"></div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="triangle b1"></div>
+                                    </div>
+                                </div>
+                                <!-- ribbons end -->
+                                <div class="img_car pix_car1">
+                                    <a href="#">
+                                        <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
+                                    </a>
+                                    <img src="images/product_1.png" alt="" width="600" height="240">
+                                </div>
+                                <h3>經典漢堡套餐</h3>
+                                <p class="text_line">Class Hamburger Package</p>
+                                <p class="price">$120</p>
+                                <div class="button">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
+                                </div>
+                            </li>
+                            <li class="product_cars js_animated_y60">
+                                <div class="img_car pix_car2">
+                                    <a href="#">
+                                        <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
+                                    </a>
+                                    <img src="images/product_2.png" alt="" width="600" height="240">
+                                </div>
+                                <h3>英俊香腸</h3>
+                                <p class="text_line">Handsome Sausage</p>
+                                <p class="price">$1,024</p>
+                                <div class="button">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
+                                </div>
+                            </li>
+                            <li class="product_cars js_animated_y60">
+                                <div class="img_car pix_car3">
+                                    <a href="#">
+                                        <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
+                                    </a>
+                                    <img src="images/product_3.png" alt="" width="600" height="240">
+                                </div>
+                                <h3>漢堡兄弟</h3>
+                                <p class="text_line">Hamburger Brothers</p>
+                                <p class="price">$792</p>
+                                <div class="button">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
+                                </div>
+                            </li>
+                            <li class="product_cars js_animated_y60">
+                                <div class="img_car pix_car4">
+                                    <a href="#">
+                                        <span class="fa fa-heart-o favorite" aria-hidden="true"></span>
+                                    </a>
+                                    <img src="images/product_4.png" alt="" width="600" height="240">
+                                </div>
+                                <h3>完美願望</h3>
+                                <p class="text_line">Dragon Ball Package</p>
+                                <p class="price">$99,999</p>
+                                <div class="button">
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車</a>
+                                </div>
+                            </li>
+                            <!-- <div class="clearfix"></div> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- footer +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <footer>
-            <div class="about">
-                <h3>關於 六角西餐廳</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit est a perferendis labore modi ut?</p>
-            </div>
-            <div class="address">
-                <h3>聯絡方式</h3>
-                <ul>
-                    <li>
-                        <p>高雄市中正五路58號1樓</p>
-                    </li>
-                    <li>
-                        <p>+886 886 886</p>
-                    </li>
-                    <li>
-                        <p>service@hexschool.com</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="blog">
-                <div class="footer_logo">
-                    <img src="images/footer_logo.gif" alt="">
+        <footer class="bg-lightpink text-brown py-1">
+            <div class="container">
+                <div class="row">
+                    <div class="about pull-left col-3 mr-3 mb-2">
+                        <h3 class="pb-1">關於 六角西餐廳</h3>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur tempora facilis soluta ullam fugit voluptates cumque odio tenetur. Dicta?</p>
+                    </div>
+                    <div class="address pull-left col-3 mx-1 mb-2">
+                        <h3 class="pb-1">聯絡方式</h3>
+                        <ul>
+                            <li>
+                                <p>高雄市中正五路58號1樓</p>
+                            </li>
+                            <li>
+                                <p>+886 886 886</p>
+                            </li>
+                            <li>
+                                <p>service@hexschool.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog col-3 pull-right">
+                        <div class="footer_logo pull-right pb-1">
+                            <img src="images/logo_title.gif" width="250" height="50" alt="">
+                        </div>
+                        <br>
+                        <ul class="pull-right">
+                            <li>
+                                <a href=""><img src="images/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/google-plus.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/twitter.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <a href=""><img src="images/facebook.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/google-plus.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/twitter.svg" alt=""></a>
-                    </li>
-                </ul>
             </div>
-            <div class="clear_both"></div>
 
         </footer>
 
     </div>
 
-
-
-
-    <!-- <script src="js/lightbox-plus-jquery.min.js"></script>     -->
-    <!-- <script src="js/jquery.nivo.slider.js"></script> -->
 </body>
+
+</html>
 
 </html>

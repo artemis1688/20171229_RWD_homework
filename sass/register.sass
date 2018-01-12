@@ -147,32 +147,55 @@ $rounded: true
 				top: 70px
 
 // section login //////////////////////////////////////////////////////////////////////////////
-.login
-	height: 500px
-	.login_block
-		width: 300px
+.register
+	height: 550px
+	@include mobile
+		height: 720px
+	.register_block
+		width: 620px
 		left: 0
 		right: 0
 		margin: auto
-		h2
+		@include mobile
 			width: 300px
+		h2
+			width: 620px
 			height: 60px
 			@include text-hide
 			background: url(../images/logo_title.gif) center center no-repeat
+			@include mobile
+				width: 300px
 		.login_text
 			font-size: 20px
 			text-align: center
 
-.login
+.register
 	.login_input
 		left: 0
 		right: 0
 		margin: auto
 		top: 120px
+		width: 620px
+		height: 340px
 		border-top: 3px solid #f56c23
 		@include box-shadow
+		@include mobile
+				width: 300px
+				height: 520px
+
+.members_agree
+	width: 50%
+	@include mobile
+		width: 100%
+	p
+		font-size: 13px
+		padding-top: 16px
+
 
 .form_css
+	width: 50%
+	@include mobile
+		width: 100%
 	label
 		font-size: 14px
 		color: rgb(61,17,1)
@@ -181,7 +204,7 @@ $rounded: true
 		font-size: 13px
 		color: #f56c23
 
-.login
+.register
 	input
 		&[type="text"],
 		&[type="email"],
@@ -197,6 +220,8 @@ $rounded: true
 			color: #787878
 			margin-top: 5px
 			margin-bottom: 3px
+			@include mobile
+				width: 100%
 		&[type="text"]:focus, 
 		&[type="email"]:focus, 
 		&[type="number"]:focus
@@ -205,16 +230,18 @@ $rounded: true
 	.textstyle
 		width: 100%
 	.button
-		top: 210px
-		left: 11px
+		top: 250px
+		right: 15px
 		right: 0
 		margin: auto
+		@include mobile
+			top: 420px
 		.btn
 			text-align: center
-			width: 46%
-			float: left
+			width: 150px
+			float: right
 			font-family: Heiti TC, Microsoft JhengHei, Helvetica, Arial, sans-serif
-			margin-top: 10px
+			margin-top: 20px
 			font-size: 14px
 			padding: 0.4em 1em
 			color: #fff

@@ -26,7 +26,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -77,29 +77,36 @@
             </div>
         </section>
         <!-- section login +++++++++++++++++++++++++++++++++++++++++++++++-->
-        <section class="login bg-lightpink py-3 relative">
+        <section class="register bg-lightpink py-3 relative">
             <div class="container">
                 <div class="row">
-                    <div class="login_block absolute js_animated_y60">
+                    <div class="register_block absolute js_animated_y60">
                         <h2 class="py-2 text-center">
                             <a href="#">六角西餐廳</a>
                         </h2>
                         <p class="text-brown font-bold login_text">享受美食好味道</p>
                         <div class="login_input mt-2 pa-1 absolute">
-                            <h4 class="text-center text-brown font-bold">LOGIN</h4>
-                            <form class="form_css pt-1" action="action_page.php">
-                                <label for="mail">E-mail Address *</label><br>
-                                <input class="textstyle" id="mail" type="email" placeholder="hexschool@mail.com" name="mail"><br>
-                                <label for="number">Password *<br></label>
-                                <input class="textstyle" id="number" type="password" placeholder="" name="password"><br>
-                                <p class="fogot_pw font-bold">忘記密碼?</p>
-                                <br>
-                                <ul class="button absolute pa-1">
-                                    <li class="btn btn_gray">註冊</li>
-                                    <li class="btn">登入</li>
-                                    <div class="clear_both"></div>
-                                </ul>
-                            </form>
+                            <h4 class="text-center text-brown font-bold">REGISTER</h4>
+                            <div class="row_in">
+                                <div class="members_agree pull-left text-brown">
+                                    <h4>會員條款</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus consectetur ipsum porro provident! Fugiat deleniti perferendis repellendus fugit explicabo eum suscipit vero magni? Laborum tenetur officia dignissimos
+                                        eveniet porro quos.</p>
+                                </div>
+                                <form class="form_css pt-1 pull-left" action="action_page.php">
+                                    <label for="mail">E-mail Address *</label><br>
+                                    <input class="textstyle" id="mail" type="email" placeholder="hexschool@mail.com" name="mail"><br>
+                                    <label for="number">Password *<br></label>
+                                    <input class="textstyle" id="number" type="password" placeholder="" name="password"><br>
+                                    <label for="number">Password *<br></label>
+                                    <input class="textstyle" id="number" type="password" placeholder="" name="password"><br>
+                                    <p class="fogot_pw font-bold">已經有帳號了嗎?</p>
+                                    <br>
+                                    <ul class="button absolute pa-1">
+                                        <div class="btn">註冊</div>
+                                    </ul>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

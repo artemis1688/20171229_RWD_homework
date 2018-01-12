@@ -1,49 +1,58 @@
-$(document).ready(function() {
-    // gototop Features////////////////////////////////////////////////////
-    $('.jq_top a').click(function(event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: 0 }, 800);
+$(function () {
+    var showskill = false;
+    // gototop function////////////////////////////////////////////////////
+    $('.js_scroll_top').click(function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        var targetPos = $(target).offset().top;
+        $('html,body').animate({ scrollTop: targetPos }, 750);
     })
 
-    // dropdown Features//////////////////////////////////////////////////
-    $('.jq_dropdown').click(function(event) {
-        event.preventDefault();
-        $('.dropdown').toggleClass('active');
-        $('.dropdown_open').slideToggle(500);
-    });
-
-    // lightbox features/////////////////////////////////////////////////////
-    lightbox.option({
-        'resizeDuration': 1000,
-        'wrapAround': true
-    })
-
-    // nivoSlider/////////////////////////////////////////////////////////////
-    $(window).on('load', function() {
-    $('#slider').nivoSlider({ 
-        // effect: 'random',                 // Specify sets like: 'fold,fade,sliceDown' 
-        effect: 'fade',
-        slices: 15,                       // For slice animations 
-        boxCols: 8,                       // For box animations 
-        boxRows: 4,                       // For box animations 
-        animSpeed: 500,                   // Slide transition speed 
-        pauseTime: 3000,                  // How long each slide will show 
-        startSlide: 0,                    // Set starting Slide (0 index) 
-        directionNav: true,               // Next & Prev navigation 
-        controlNav: true,                 // 1,2,3... navigation 
-        controlNavThumbs: false,          // Use thumbnails for Control Nav 
-        pauseOnHover: true,               // Stop animation while hovering 
-        manualAdvance: false,             // Force manual transitions 
-        prevText: 'Prev',                 // Prev directionNav text 
-        nextText: 'Next',                 // Next directionNav text 
-        randomStart: false,               // Start on a random slide 
-        beforeChange: function(){},       // Triggers before a slide transition 
-        afterChange: function(){},        // Triggers after a slide transition 
-        slideshowEnd: function(){},       // Triggers after all slides have been shown 
-        lastSlide: function(){},          // Triggers when last slide is shown 
-        afterLoad: function(){}           // Triggers when slider has loaded 
+    $(window).scroll(function () {
+        var scrollPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        // animation function////////////////////////////////////////////////////
+        $('.js_scroll_top').each(function () {
+            var target = $(this).attr('href');
+            var targetPos = $(target).offset().top;
+            var targetHeight = $(target).outerHeight();
+            if (targetPos - 1 < scrollPos && (targetPos + targetHeight) > scrollPos) {
+                $('.js_scroll_top').removeClass('active');
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
         });
+        // fade_in y60 function////////////////////////////////////////////////////
+        $('.js_animated_y60').each(function () {
+            var thisPos = $(this).offset().top;
+            if ((windowHeight + scrollPos) >= thisPos) {
+                $(this).addClass('fade_in');
+            }
+        });
+        // fade_in x60 function////////////////////////////////////////////////////
+        $('.js_animated_x60').each(function () {
+            var thisPos = $(this).offset().top;
+            if ((windowHeight + scrollPos) >= thisPos) {
+                $(this).addClass('fade_in');
+            }
+        });
+        // fade_in x-60 function////////////////////////////////////////////////////
+        $('.js_animated_x-60').each(function () {
+            var thisPos = $(this).offset().top;
+            if ((windowHeight + scrollPos) >= thisPos) {
+                $(this).addClass('fade_in');
+            }
+        });
+        // bg scroll function////////////////////////////////////////////////////
+        $('#js_hamburger').css('transform', 'translateX(' + (scrollPos / 5) + 'px)')
     });
-
+    // menu toggle_show function////////////////////////////////////////////////////
+    $('.showmenu').on('click', function(e) {
+        e.preventDefault();
+        $('body').toggleClass('menu-show');
+    });
+    
 
 });
+

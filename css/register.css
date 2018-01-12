@@ -601,15 +601,21 @@ header {
         left: 30%;
         top: 70px; } }
 
-.login {
-  height: 500px; }
-  .login .login_block {
-    width: 300px;
+.register {
+  height: 550px; }
+  @media (max-width: 767px) {
+    .register {
+      height: 720px; } }
+  .register .register_block {
+    width: 620px;
     left: 0;
     right: 0;
     margin: auto; }
-    .login .login_block h2 {
-      width: 300px;
+    @media (max-width: 767px) {
+      .register .register_block {
+        width: 300px; } }
+    .register .register_block h2 {
+      width: 620px;
       height: 60px;
       text-indent: -9999999px;
       white-space: nowrap;
@@ -620,27 +626,49 @@ header {
       background-size: contain;
       background: url(../images/logo_w.png) center center no-repeat;
       background: url(../images/logo_title.gif) center center no-repeat; }
-    .login .login_block .login_text {
+      @media (max-width: 767px) {
+        .register .register_block h2 {
+          width: 300px; } }
+    .register .register_block .login_text {
       font-size: 20px;
       text-align: center; }
 
-.login .login_input {
+.register .login_input {
   left: 0;
   right: 0;
   margin: auto;
   top: 120px;
+  width: 620px;
+  height: 340px;
   border-top: 3px solid #f56c23; }
+  @media (max-width: 767px) {
+    .register .login_input {
+      width: 300px;
+      height: 520px; } }
 
-.form_css label {
-  font-size: 14px;
-  color: #3d1101;
-  font-weight: bold; }
+.members_agree {
+  width: 50%; }
+  @media (max-width: 767px) {
+    .members_agree {
+      width: 100%; } }
+  .members_agree p {
+    font-size: 13px;
+    padding-top: 16px; }
 
-.form_css .fogot_pw {
-  font-size: 13px;
-  color: #f56c23; }
+.form_css {
+  width: 50%; }
+  @media (max-width: 767px) {
+    .form_css {
+      width: 100%; } }
+  .form_css label {
+    font-size: 14px;
+    color: #3d1101;
+    font-weight: bold; }
+  .form_css .fogot_pw {
+    font-size: 13px;
+    color: #f56c23; }
 
-.login input[type="text"], .login input[type="email"], .login input[type="password"], .login input[type="number"] {
+.register input[type="text"], .register input[type="email"], .register input[type="password"], .register input[type="number"] {
   padding: 0.6em 0.6em;
   display: inline-block;
   border: 1px solid #ccc;
@@ -652,25 +680,31 @@ header {
   color: #787878;
   margin-top: 5px;
   margin-bottom: 3px; }
+  @media (max-width: 767px) {
+    .register input[type="text"], .register input[type="email"], .register input[type="password"], .register input[type="number"] {
+      width: 100%; } }
 
-.login input[type="text"]:focus, .login input[type="email"]:focus, .login input[type="number"]:focus {
+.register input[type="text"]:focus, .register input[type="email"]:focus, .register input[type="number"]:focus {
   outline: 1px;
   border-color: #a2928e; }
 
-.login .textstyle {
+.register .textstyle {
   width: 100%; }
 
-.login .button {
-  top: 210px;
-  left: 11px;
+.register .button {
+  top: 250px;
+  right: 15px;
   right: 0;
   margin: auto; }
-  .login .button .btn {
+  @media (max-width: 767px) {
+    .register .button {
+      top: 420px; } }
+  .register .button .btn {
     text-align: center;
-    width: 46%;
-    float: left;
+    width: 150px;
+    float: right;
     font-family: Heiti TC, Microsoft JhengHei, Helvetica, Arial, sans-serif;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 14px;
     padding: 0.4em 1em;
     color: #fff;
@@ -684,7 +718,7 @@ header {
     -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); }
-    .login .button .btn:hover {
+    .register .button .btn:hover {
       background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1));
       background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
@@ -695,7 +729,7 @@ header {
       -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
       box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
       cursor: pointer; }
-  .login .button .btn_gray {
+  .register .button .btn_gray {
     background-color: #a09e9e; }
 
 footer .address {

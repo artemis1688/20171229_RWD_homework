@@ -1,0 +1,94 @@
+// 圖片取代文字//////////////////////////
+@mixin text-hide
+    text-indent: -9999999px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block
+    width: 100%
+    height: 24px
+    background-size: contain
+    background: url(../images/logo_w.png) center center no-repeat
+
+// 清除浮動/////////////////////////////
+@mixin clearfix()
+    &:before,
+    &:after
+        content: " "; // 1
+        display: table; // 2
+    &:after
+        clear: both;
+
+
+
+///@mixin帶入變數////////////////////
+@mixin circle($size, $bgcolor)
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+    font-size: $size/3;
+    background: $bgcolor;
+
+// .white
+//     @include circle(30px,#fff)
+
+// .pink
+//     @include circle(50px,pink)
+
+// 載具的設定/////////////////////////
+// breakpoint
+@mixin desktop
+    @media(min-width:992px)
+        @content
+
+@mixin pad
+    @media (min-width: 768px) and (max-width: 991.99px)
+        @content
+
+@mixin mobile
+    @media(max-width:767px)
+        @content
+
+@mixin iphone5
+    @media(max-width:320px)
+        @content
+
+
+
+// box shadow ///////////////////////////
+
+@mixin box-shadow
+//colors
+$black_30: rgba(0, 0, 0, 0.3)
+$lightpink: rgb(239,233,231)
+
+.login_input
+    width: 300px
+    height: 300px
+    padding: 30px 20px
+    margin: 0 15px
+    // float: left
+    // text-align: center
+    position: relative
+    box-shadow: 1px 2px 4px $black_30
+    background-color: $lightpink
+
+.login_input::after
+    content: ''
+    position: absolute
+    z-index: -3
+    box-shadow: 0 10px 30px $black_30
+    width: 80%
+    left: 5%
+    height: 10px
+    border-radius: 50%
+
+.login_input:hover::after
+    content: ''
+    position: absolute
+    z-index: -1
+    box-shadow: 0 10px 20px $black_30
+    width: 90%
+    left: 5%
+    height: 30px
+    border-radius: 50%
+    bottom: 0

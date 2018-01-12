@@ -1,0 +1,213 @@
+// Floats //////////////////////////////////////////
+
+.clearfix
+  @include clearfix
+
+// Toggling content //////////////////////////////////////////
+
+.hide
+  display: none !important
+
+.show
+  display: block !important
+
+.invisible
+  visibility: hidden
+
+.text-hide
+  @include text-hide
+
+.hidden
+  display: none !important
+
+// Utilities //////////////////////////////////////////
+
+.h100
+  height: 100%
+
+.v-center
+  top: 50%
+  transform: translateY(-50%)
+  position: relative
+
+.relative
+	position: relative
+
+.absolute
+	position: absolute
+
+.fixed
+	position: fixed
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.circle-border
+	border: transparent 2px solid
+	border-radius: 100%
+
+.border-white
+	border-color: white
+
+.bg-darker
+	background-color: rgb(0, 0, 0)
+
+.bg-brown
+	background-color: rgb(61,17,1)
+
+.bg-lightpink
+	background-color: rgb(239,233,231)
+
+.bg-complexion
+	background-color: rgb(246,244,243)
+
+.text-gray
+	color: rgb(227,227, 227)
+
+.text-white
+	color: rgb(255,255, 255)
+
+.text-brown
+	color: rgb(61,17,1)
+
+.text-light-brown
+	color: rgb(108,75,62)
+
+.text-right
+	text-align: right
+
+.text-center
+	text-align: center
+
+.text-justify
+	text-align: justify
+
+.font-bold
+	font-weight: bold
+
+.block
+	display: block
+
+.box-shadow
+	position: relative
+	&:before
+		content: " "
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		box-shadow: 0 0 15px rgba(black, .15)
+
+// space //////////////////////////////////////////
+$space:	16px
+
+// margin //////////////////////////////////////////
+.mb-0
+	margin-bottom: 0
+
+.mt-1
+	margin-top:	$space
+
+.mt-2
+	margin-top:	$space*2
+
+.mt-3
+	margin-top:	$space*3
+
+.mt-4
+	margin-top:	$space*4
+
+.mr-3
+	margin-right: $space*3
+
+.mb-2
+	margin-bottom: $space*2
+
+.mb-1
+	margin-bottom: $space*1
+
+.my-1
+	margin-top: $space
+	margin-bottom: $space
+
+.my-2
+	margin-top: $space*2
+	margin-bottom: $space*2
+
+.my-3
+	margin-top: $space*3
+	margin-bottom: $space*3
+
+.mx-1
+	margin-left: $space
+	margin-right: $space
+
+.mx-2
+	margin-left: $space*2
+	margin-right: $space*2
+
+.ml-1
+	margin-left: $space
+
+.ma-1
+	margin: $space
+
+.ma-2
+	margin: $space*2
+
+.py-1
+	padding-top: $space
+	padding-bottom: $space
+
+.py-2
+	padding-top: $space*2
+	padding-bottom: $space*2
+
+.py-3
+	padding-top: $space*3
+	padding-bottom: $space*3
+
+.px-1
+	padding-left: $space
+	padding-right: $space
+
+.px-2
+	padding-left: $space*2
+	padding-right: $space*2
+
+.px-3
+	padding-left: $space*3
+	padding-right: $space*3
+
+.pt-1
+	padding-top: $space
+
+.pr-1
+	padding-right: $space
+
+.pl-1
+	padding-left: $space
+
+.pl-2
+	padding-left: $space*2
+
+.pb-1
+	padding-bottom: $space
+
+.pb-2
+	padding-bottom: $space*2
+
+.pa-1
+	padding: $space
+
+.pa-2
+	padding: $space*2
+
+.pa-3
+	padding: $space*3
+
+
